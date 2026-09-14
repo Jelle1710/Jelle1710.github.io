@@ -23,14 +23,15 @@ section {
 article {
     flex: 1;
     padding: 0;
-    margin: 0 10px;
+    margin: 1%;
 }
 
 .knop {
     display: block;
     background-color: orange;
     color: black;
-    padding: 30px 20px;
+    padding: 20px 30px;
+    margin: 1%;
     text-decoration: none;
     text-align: center;
 }
