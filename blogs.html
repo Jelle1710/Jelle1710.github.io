@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head> 
+    <title>Blogs</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <section>
+      <article>
+        <h2><a href="index.html" class="knop">Home</a></h2> 
+      </article>  
+      <article>
+        <h2><a href="Over mij.html" class="knop">Over mij</a></h2>
+      </article>
+      <article>
+        <h2><a href="projecten.html" class="knop">Projecten</a></h2>
+      </article>
+      <article>
+        <h2><a href="blogs.html" class="knop">Blog</a></h2>
+      </article>
+      <article>
+        <h2><a href="contact.html" class="knop">Contact</a></h2>
+      </article>
+    </section>
+
+      <form id="contact-form" novalidate>
+    <label for="naam">Naam</label>
+    <input id="naam" required minlength="2" aria-describedby="naam-error" aria-invalid="false">
+    <span id="naam-error" role="alert"></span>
+    <label for="email">E-mail</label>
+    <input id="email" type="email" required aria-describedby="email-error" aria-invalid="false">
+    <span id="email-error" role="alert"></span>
+    <label for="bericht">Bericht</label>
+    <textarea id="bericht" required minlength="10" aria-describedby="bericht-error" aria
+invalid="false"></textarea>
+    <span id="bericht-error" role="alert"></span>
+    <button type="submit">Versturen</button>
+    <div id="form-status" aria-live="polite"></div>
+  </form>
+  <script src="./script.js"></script>
+
+  </body>
+</html>
