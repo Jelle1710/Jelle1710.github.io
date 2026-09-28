@@ -1,16 +1,35 @@
 body {
     background: #30475e;
     font-family: sans-serif;
-    margin: 0;
+    margin: 0px;
+}
+
+.index-header {
+  background-color: black;
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
 }
 
 header {
-    background: black;
-    min-height: 500px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.hoofdmenu {
+    color: #f2a365;
+    margin: 0;
+    font-size: 100px;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -29,11 +48,50 @@ h2 {
 
 section {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     width: 100%;
     gap: 1rem;
     padding: 1rem;
     box-sizing: border-box;
+}
+
+p {
+    color: #f2a365;
+    font-size: clamp(30px, 2.5vw, 1.2rem);
+    text-align: left;
+    margin-left: 40px;
+    max-width: 600px;
+}
+
+.over-mij__foto {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-right: 0px;
+    align-content: right;
+    size-adjust: auto;
+    size: 80%;
+}
+
+.projecten__foto {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+    margin-left: 0px;
+    align-content: left;
+    size-adjust: auto;
+    size: 80%;
+    display: flex;
+}
+
+.projecten {
+    flex: 1 1 250px;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    align-content: right;
 }
 
 article {
@@ -42,14 +100,23 @@ article {
     margin: 0;
 }
 
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+}
+
 .knop {
-    display: block;
-    background-color: #f2a365;
-    color: black;
-    padding: 20px 30px;
-    text-decoration: none;
-    text-align: center;
-    font-size: clamp(1rem, 2.5vw, 1.2rem);
+  flex: 1;
+  background-color: #f2a365;
+  color: black;
+  padding: 20px 30px;
+  text-decoration: none;
+  text-align: center;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  border-radius: 50px;
 }
 
 @media (max-width: 768px) {
