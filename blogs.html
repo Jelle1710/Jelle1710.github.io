@@ -2,7 +2,7 @@
 <html>
   <head> 
     <title>Blogs</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cssfolder/style.css">
      <header>
     <nav aria-label="Hoofdmenu">
       <a href="index.html" class="knop">Home</a>
@@ -14,23 +14,15 @@
   </header>
   </head>
   <body>
+<div class="container">
+    <div class="section-header">
+      <h1>Blogs</h1>
+    </div>
 
-
-
-      <form id="contact-form" novalidate>
-    <label for="naam">Naam</label>
-    <input id="naam" required minlength="2" aria-describedby="naam-error" aria-invalid="false">
-    <span id="naam-error" role="alert"></span>
-    <label for="email">E-mail</label>
-    <input id="email" type="email" required aria-describedby="email-error" aria-invalid="false">
-    <span id="email-error" role="alert"></span>
-    <label for="bericht">Bericht</label>
-    <textarea id="bericht" required minlength="10" aria-describedby="bericht-error" aria
-invalid="false"></textarea>
-    <span id="bericht-error" role="alert"></span>
-    <button type="submit">Versturen</button>
-    <div id="form-status" aria-live="polite"></div>
-  </form>
+    <div id="blog-status" class="status">Blogposts laden...</div>
+    <div id="blog-grid" class="blog-grid" style="display:none;"></div>
+  </div>
+  <script src="blogs.js"></script>
   <script src="./script.js"></script>
 
   </body>
