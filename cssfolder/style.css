@@ -24,6 +24,12 @@ header {
     box-sizing: border-box;
 }
 
+footer {
+    color: #f2a365;
+    padding: 1rem;
+    bottom: 0;
+    width: 100%;
+}
 .hoofdmenu {
     color: #f2a365;
     margin: 0;
@@ -222,6 +228,22 @@ nav {
 
 .card_blog a:hover {
   background: #1d4ed8;
+}
+
+.linkedin-logo {
+  width: 40%;
+  height: 100%;
+  margin-right: 8px;
+  margin-left: 300px;
+  align-items: center;
+}
+
+.mail-logo {
+  width: 50%;
+  height: 100%;
+  margin-right: 8px;
+  margin-left: 100px;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
