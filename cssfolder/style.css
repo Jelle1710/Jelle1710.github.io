@@ -171,7 +171,7 @@ nav {
 }
 
 .card_blog {
-  background: lightblue;
+  background: black;
   border-radius: 18px;
   padding: 20px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
@@ -186,7 +186,7 @@ nav {
 
 .blog-meta {
   font-size: 0.9rem;
-  color: #555;
+  color: #f2a365;
   margin-bottom: 12px;
 }
 
