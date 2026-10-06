@@ -252,15 +252,15 @@ nav {
         min-height: 45vh;
     }
 
+  .knop {
+        padding: 16px 20px;
+    }
+    
     section {
         flex-direction: column;
     }
 
     article {
         flex: 1 1 100%;
-    }
-
-    .knop {
-        padding: 16px 20px;
     }
 }
