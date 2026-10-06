@@ -1,49 +1,52 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="nl">
-<head>
-  <meta charset="utf-8">
-  <title>Projecten</title>
-  <link rel="stylesheet" href="cssfolder/style.css">
-</head>
-<body>
-  <header>
-    <nav aria-label="Hoofdmenu">
-      <a href="index.html" class="knop">Home</a>
-      <a href="overmij.html" class="knop">Over mij</a>
-      <a href="projecten.html" class="knop">Projecten</a>
-      <a href="blogs.html" class="knop">Blog</a>
-      <a href="contact.html" class="knop">Contact</a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8">
+    <title>Projecten</title>
+    <meta name="description" content="Overzicht van mijn projecten">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssfolder/style.css">
+  </head>
+  <body>
+    <header>
+      <nav aria-label="Hoofdmenu">
+        <a href="index.html" class="knop">Home</a>
+        <a href="overmij.html" class="knop">Over mij</a>
+        <a href="projecten.html" class="knop">Projecten</a>
+        <a href="blogs.html" class="knop">Blog</a>
+        <a href="berichtmij.html" class="knop">Contact</a>
+      </nav>
+    </header>
 
-  <main>
-    <section class="projecten-section">
-      <div class="projecten-foto">
-        <img src="images/WPFWwebsiteprojectenfoto.png" alt="Decoratieve foto">
-      </div>
+    <main>
+      <section class="projecten-section">
+        <div class="projecten-tekst">
+          <h1>Projecten</h1>
+          <p>Hieronder staan mijn projecten. Je kunt ze filteren op categorie of zoeken op naam.</p>
+        </div>
+      </section>
 
-      <div class="projecten-tekst">
-        <h1>Projecten</h1>
-        <p>Hieronder zijn al mijn projecten te vinden waar ik in het verleden aan heb gewerkt.</p>
-      </div>
-    </section>
+      <section class="project-filters" aria-label="Projectfilters">
+        <label for="project-zoek">Zoeken</label>
+        <input type="search" id="project-zoek" placeholder="Zoek op projectnaam of beschrijving">
 
-    <section>
-      <h2>Project 1: Hotelsimulatie</h2>
-      <p>
-        Het eerste project waar ik aan heb meegewerkt is een hotelsimulatie voor een AI stakeholder genaamd John Karma.
-        Voor dit project heb ik samen met 4 andere studenten een simulatie gemaakt waarin een .json-bestand kan worden geüpload
-        en een scenario kan worden geselecteerd. Aan de hand hiervan stromen er gasten binnen en worden die verdeeld over de kamers.
-      </p>
+        <label for="project-categorie">Categorie</label>
+        <select id="project-categorie">
+          <option value="alle">Alle categorieën</option>
+          <option value="school">School</option>
+          <option value="web">Web</option>
+          <option value="game">Game</option>
+        </select>
+      </section>
 
-      <figure class="Hotelsimulatie_foto">
-        <img src="images/Hotelsimulatie-50-size.jpg" alt="Een afbeelding van de hotelsimulatie" class="image">
-      </figure>
-    </section>
-  </main>
+      <p id="project-status" class="status" aria-live="polite"></p>
+      <section id="project-grid" class="project-grid"></section>
+    </main>
 
-  <footer>
-    <p>© 2026 Jelle van Uffelen</p>
-  </footer>
-</body>
+    <footer>
+      <p>© 2026 Jelle van Uffelen</p>
+    </footer>
+
+    <script src="javascriptfolder/projecten.js"></script>
+  </body>
 </html>
